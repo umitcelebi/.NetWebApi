@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Entities.Concrete;
+using Microsoft.AspNetCore.Authorization;
 
 namespace WebApi.Controllers
 {
@@ -21,6 +22,7 @@ namespace WebApi.Controllers
         }
 
         [HttpGet("getall")]
+        [Authorize]
         public IActionResult GetList()
         {
             var result = _productService.GetList();
