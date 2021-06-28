@@ -20,7 +20,7 @@ namespace DataAccess.Concrete.EntityFramework.Context
         public DbSet<Category> Categories { get; set; }
         public DbSet<OperationClaim> OperationClaims { get; set; }
         public DbSet<User> Users { get; set; }
-        public DbSet<UserOperationsClaim> UserOperationsClaims { get; set; }
+        public DbSet<UserOperationsClaim> UserOperationClaims { get; set; }
 
     }
 }
